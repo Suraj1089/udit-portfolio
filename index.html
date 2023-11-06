@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,7 @@
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-          crossorigin="anonymous">
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Custom Styles -->
     <style>
@@ -66,52 +66,107 @@
             text-align: left;
         }
 
+        /* Add this CSS code to your existing styles or create a new section for it */
+
+        .photo-grid {
+            margin-top: 20px;
+        }
+
+        .photo-grid h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .photo-container {
+            display: inline-block;
+            width: 300px;
+            /* Adjust the width as needed */
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .photo-container p {
+            padding: 10px;
+        }
+
+
         /* Add your additional custom styles here */
     </style>
 </head>
+
 <body>
-<header>
-    <h1>Udit Sahai</h1>
-    <p>Project Engineer at Cotmac</p>
-</header>
+    <header>
+        <h1>Udit Sahai</h1>
+        <p>Project Engineer at Cotmac</p>
+    </header>
 
-<div class="container">
-    <p>Udit Sahai</p>
-    <p>Mobile: +91-8795189747</p>
-    <p>Email: udit2000sahay@gmail.com</p>
-    <p>W Pune, India.</p>
+    <div class="container">
+        <p>Udit Sahai</p>
+        <p>Mobile: +91-8795189747</p>
+        <p>Email: udit2000sahay@gmail.com</p>
+        <p>Pune, India.</p>
 
-    <!-- More content for Objective and Education can be added here -->
+        <!-- //add User profile photo -->
+        <img src="Udit.jpeg" alt="Udit Sahai" class="profile-image">
+        <!-- More content for Objective and Education can be added here -->
 
-    <!-- Experience Section -->
-    <p>Experience - Total: 2 Years</p>
-    <p>Cotmac Electronics PVT.LTD (Currently Working) Pune, India.</p>
-    <p>Project Engineer (Full-time) Currently working Honeywell DCS Platform -Below are my deployment snaps.</p>
-    <!-- More experience details can be added here -->
+        <!-- Experience Section -->
+        <p>Experience - Total: 2 Years</p>
+        <p>Cotmac Electronics PVT.LTD (Currently Working) Pune, India.</p>
+        <p>Project Engineer (Full-time) Currently working Honeywell DCS Platform -Below are my deployment snaps.</p>
+        <!-- More experience details can be added here -->
 
-    <!-- Skills Section -->
-    <p>Skills</p>
-    <!-- Skills details can be added here -->
+        <!-- Languages Section -->
+        <p>Languages</p>
+        <p>English (Professional Working Proficiency)</p>
+        <p>Hindi (Native)</p>
 
-    <!-- Extra-Curricular Activities Section -->
-    <p>Extra-Curricular Activities</p>
-    <!-- Activities can be added here -->
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+            <a href="Udit_Sahai_CV.pdf" class="btn btn-outline-light mr-5" target="_blank"
+                style="background-color: #e1f0e4; border: 2px solid #000000; color: #000000;">Download CV</a>
+        </div>
+        <!-- add space 
+         -->
+            <br>
 
-    <!-- Languages Section -->
-    <p>Languages</p>
-    <p>English (Professional Working Proficiency)</p>
-    <p>Hindi (Native)</p>
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+            <a href="Udit_Sahai_Project.pdf" class="btn btn-outline-light mr-5" target="_blank"
+                style="background-color: #e1f0e4; border: 2px solid #000000; color: #000000;">Download CV</a>
+        </div>
 
-    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-        <a href="Udit_Sahai_CV.pdf" class="btn btn-outline-light mr-5"
-           target="_blank" style="background-color: #e1f0e4; border: 2px solid #000000; color: #000000;">Download CV</a>
+        <ul class="social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
     </div>
+    <!-- Add this section after the social icons section -->
+    <section class="photo-grid">
+        <h2>Appreciation</h2>
+        <div class="photo-container">
+            <img src="1.png" alt="Photo 1">
+            <p></p>
+        </div>
+        <!-- <div class="photo-container">
+            <img src="2.png" alt="Photo 2">
+            <p></p>
+        </div> -->
+        <div class="photo-container">
+            <img src="3.png" alt="Photo 3">
+            <p></p>
+        </div>
+        <!-- Add more photo containers as needed -->
+    </section>
 
-    <ul class="social-icons">
-        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-</div>
 </body>
+
 </html>
